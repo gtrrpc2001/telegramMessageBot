@@ -46,7 +46,7 @@ namespace telegramAPI
             {
                 
                 modelList = new List<model>();
-                var sql = "SELECT idx,senderid,destid,title,msg FROM omms.msg_interface_history_telegram WHERE issend = 0";
+                var sql = "";
                 var dT = con.DataSelect(sql);
                 var dR = dT.Rows;
                 foreach (DataRow r in dR)
